@@ -24,7 +24,7 @@ def get_llm():
                 model=model_id,
                 api_key=api_key,
                 temperature=0.1,
-                max_tokens=256,
+
             )
             
             # Test the connection with a simple call
