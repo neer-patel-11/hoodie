@@ -14,3 +14,4 @@ langchain_google_genai
 ddgs
 langchain_openai
 psutil
+langchain_mcp_adapters

@@ -5,7 +5,7 @@ from graph.tools.tools import get_tools
 
 load_dotenv()
 
-def get_llm():
+def get_gptModel():
     api_key = os.getenv("OPENAI_API_KEY")
     
     if not api_key:

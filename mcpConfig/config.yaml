@@ -1,0 +1,9 @@
+servers:
+  filesystem:
+    command: python
+    args:
+      - -m
+      - mcp.server.filesystem
+      - --root
+      - D:/mcp_test
+    transport: stdio
