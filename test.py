@@ -25,6 +25,7 @@ SYSTEM_PROMPT = SystemMessage(
 
 # Predefined test questions
 TEST_QUESTIONS = [
+    # "make a folder named joydeep in D drive and init make 3 files named 1.txt , 2.txt , 3.txt and add 3 different jokes in it"
     "list files in my google drive"
     # "What is the current directory?",
     # "Can you list the files in the current directory?",

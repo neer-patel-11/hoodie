@@ -453,49 +453,27 @@ class GoogleDriveMCPServer:
             "usage": about["storageQuota"]["usage"],
         }
     
+# For generating drive_token.json
+# async def main():
+#     server = GoogleDriveMCPServer()
 
-def ensure_authenticated(self) -> None:
-    """
-    Ensure Google Drive credentials exist and are valid.
-    - If token.json exists and is valid → reuse it
-    - If token.json is missing/invalid → run OAuth flow and create it
-    """
+#     # 1. Get auth URL
+#     url = server.get_auth_url()
+#     print("Open this URL in your browser:\n", url)
 
-    # Case 1: token.json exists → try loading it
-    if TOKEN_PATH.exists():
-        try:
-            self.load_credentials()
-            # Lightweight auth check
-            self.service.about().get(fields="user").execute()
-            return  # ✅ all good
-        except Exception:
-            print("Existing token invalid or expired, re-authenticating...")
+#     # 2. Manually paste the code
+#     code = input("\nPaste the authorization code here: ").strip()
 
-    # Case 2: token missing or invalid → do OAuth
-    print("No valid token found. Starting OAuth flow...")
+#     # 3. Exchange code for token
+#     server.save_token(code)
 
-    flow = InstalledAppFlow.from_client_secrets_file(
-        str(CREDENTIALS_PATH),
-        SCOPES,
-    )
-
-    # Opens browser automatically and returns credentials
-    creds = flow.run_local_server(port=0)
-
-    # Save token
-    TOKEN_PATH.write_text(creds.to_json())
-
-    self.creds = creds
-    self.service = build("drive", "v3", credentials=creds)
-
-    print("✅ Authentication successful. Token saved.")
+#     # 4. Verify credentials
+#     info = server.test_credentials()
+#     print("✅ Auth OK for:", info["email"])
 
 async def main():
     server = GoogleDriveMCPServer()
-
-    #  ensure auth (create token if missing)
-    server.ensure_authenticated()
-
+    
     #  start MCP server
     await server.run()
 

@@ -4,3 +4,4 @@ __pycache__
 .vscode
 drive_credential.json
 drive_token.json
+.vscode

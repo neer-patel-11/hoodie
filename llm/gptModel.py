@@ -13,7 +13,7 @@ async def get_gptModel():
     
     # Try these models in order
     models_to_try = [
-        "gpt-4o-mini",      # Faster, cheaper GPT-4
+        "gpt-4o-mini",      
     ]
     
     for model_id in models_to_try:

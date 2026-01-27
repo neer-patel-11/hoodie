@@ -38,7 +38,7 @@ client = MultiServerMCPClient(
             ],
         },
         
-        # Sequential thinking for complex tasks
+    #     # Sequential thinking for complex tasks
         "sequential-thinking": {
             "transport": "stdio",
             "command": "npx",
@@ -65,6 +65,7 @@ client = MultiServerMCPClient(
         }
     
     }
+    
 )
 
 
