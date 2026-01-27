@@ -28,7 +28,7 @@ TEST_QUESTIONS = [
     # "make a folder named joydeep in D drive and init make 3 files named 1.txt , 2.txt , 3.txt and add 3 different jokes in it"
     "list files in my google drive"
     # "What is the current directory?",
-    # "Can you list the files in the current directory?",
+    # "Can you list the files in the D drive?",
     # "Create a file named test.txt with the content 'Hello, World!'",
     # "Read the contents of test.txt",
     # "What files did we create during this conversation?",
