@@ -2,6 +2,8 @@ from graph.state import ChatState
 
 async def approval_node(state: ChatState):
     """Ask user for approval before executing tools."""
+    #No need of approval
+    # return {"approved": True}
     
     last_message = state["messages"][-1]
     
