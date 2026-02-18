@@ -17,8 +17,8 @@ from googleapiclient.http import MediaIoBaseDownload, MediaIoBaseUpload
 
 # Configuration
 SCOPES = ["https://www.googleapis.com/auth/drive"]
-TOKEN_PATH = Path("D:\AI_agents\hodie\drive_token.json")
-CREDENTIALS_PATH = Path("D:\AI_agents\hodie\drive_credential.json")
+TOKEN_PATH = Path("D:\\AI_agents\\hoodie\\drive_token.json")
+CREDENTIALS_PATH = Path("D:\\AI_agents\\hoodie\\drive_credential.json")
 
 
 class GoogleDriveMCPServer:

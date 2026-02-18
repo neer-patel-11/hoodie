@@ -21,11 +21,7 @@ async def chat_node(state: ChatState):
         include_system=True,
     )
     
-    if state.get("approved") == False:
-        messages = messages + [
-            AIMessage(content="The user rejected the tool execution. I'll answer without using tools.")
-        ]
-    # If user rejected tool use, inform the LLM
+    
     if state.get("approved") == False:
         # Add a message saying tools were rejected
         messages = messages + [

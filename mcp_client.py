@@ -51,7 +51,7 @@ client = MultiServerMCPClient(
         "github": {
             "transport": "stdio",
             "command": "python",
-            "args": ["D:\AI_agents\hodie\mcp_server\github_mcp_server.py"],
+            "args": ["D:\AI_agents\hoodie\mcp_server\github_mcp_server.py"],
             "env": {
                 "GITHUB_TOKEN": os.getenv("GITHUB_TOKEN")
             }
@@ -60,8 +60,8 @@ client = MultiServerMCPClient(
         
         "google-drive": {
         "transport": "stdio",
-        "command": "python",
-        "args": ["D:\AI_agents\hodie\mcp_server\google_drive_mcp_server.py"]
+         "command": "D:\\AI_agents\\hoodie\\venv\\Scripts\\python.exe",
+        "args": ["D:\\AI_agents\\hoodie\\mcp_server\\google_drive_mcp_server.py"]
         }
     
     }

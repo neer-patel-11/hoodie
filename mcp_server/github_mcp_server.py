@@ -1,13 +1,4 @@
-#!/usr/bin/env python3
 """
-GitHub MCP Server - Provides GitHub API access via Model Context Protocol
-
-Installation:
-1. pip install mcp httpx
-2. Set GITHUB_TOKEN environment variable
-3. Run: python github_mcp_server.py
-
-Or add to Claude Desktop config:
 {
   "mcpServers": {
     "github": {

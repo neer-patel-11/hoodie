@@ -29,8 +29,8 @@ TEST_QUESTIONS = [
     "What is the current directory?",
     "Can you list the files in the D drive?",
     "Create a file named joke.txt with the content 'Hello, World!////////' in my google Drive",
-    "List all my github repository",
-    "Open my DAL_3 github repo on browser",
+    # "List all my github repository",
+    # "Open my DAL_3 github repo on browser",
     "What files/folders did we create during this conversation?",
     
 ]
